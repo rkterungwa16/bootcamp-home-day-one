@@ -1,0 +1,19 @@
+{
+  "name": "get-prime-numbers",
+  "version": "1.0.0",
+  "description": "Gets all prime numbers within a given number",
+  "main": "index.js",
+  "scripts": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkterungwa16/bootcamp-home-day-one.git"
+  },
+  "author": "Richard Terungwa Kombol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkterungwa16/bootcamp-home-day-one/issues"
+  },
+  "homepage": "https://github.com/rkterungwa16/bootcamp-home-day-one#readme"
+}
