@@ -72,4 +72,18 @@ describe("Data types tests ", function() {
 
   });
 
+  describe("Case for functions", function() {
+
+    it("should call the `callback` function with argument true, and return `called callback`", function() {
+      var callback = function(arg) {
+        expect(arg).toBeTruthy();
+        if(arg === true) {
+          return 'called callback';
+        }
+      };
+      expect(dataTypes(callback)).toBe('called callback');
+    });
+
+  });
+
 });
