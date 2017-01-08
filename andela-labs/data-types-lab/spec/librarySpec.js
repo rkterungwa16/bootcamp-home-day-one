@@ -23,4 +23,21 @@ describe("Data types tests ", function() {
 
   });
 
+  describe("Case for Numbers", function() {
+
+    it("should return 'less than 100' for 44", function() {
+      expect(dataTypes(44)).toBe('less than 100');
+    });
+
+    it("should return 'more than 100' for 144", function() {
+      expect(dataTypes(144)).toBe('more than 100');
+    });
+
+    it("should return 'equal to 100' for 100", function() {
+      expect(dataTypes(100)).toBe('equal to 100');
+    });
+
+
+  });
+
 });
