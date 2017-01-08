@@ -35,3 +35,11 @@ describe("Case for non numerical inputs", function() {
   });
 
 });
+
+describe("Case for non integer numerical inputs", function() {
+
+      it("should return 'wrong input type' for 6.1", function() {
+       expect(myApp.getPrimes(6.1)).to.equal('wrong input type');
+    });
+
+});
