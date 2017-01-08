@@ -40,4 +40,20 @@ describe("Data types tests ", function() {
 
   });
 
+  describe("Case for Strings", function() {
+
+    it("should return the length of `tergiversate`", function() {
+      expect(dataTypes('tergiversate')).toBe(12);
+    });
+
+    it("should return the length of an empty string", function() {
+      expect(dataTypes('')).toBe(0);
+    });
+
+    it("should return the length of `555`", function() {
+      expect(dataTypes('555')).toBe(3);
+    });
+
+  });
+
 });
