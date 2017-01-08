@@ -24,4 +24,8 @@ function dataTypes(value) {
    else if (value instanceof Array && value.length > 2) {
       return value[2];
    }
+
+   else if (typeof value === 'function'){
+      return 'called callback';
+   }
 }
