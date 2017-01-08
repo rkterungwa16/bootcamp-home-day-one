@@ -43,3 +43,35 @@ describe("Case for non integer numerical inputs", function() {
     });
 
 });
+
+describe("Case for expected outputs", function() {
+
+      it("should return [] for 0", function() {
+      expect(myApp.getPrimes(0)).to.eql([]);
+    });
+
+      it("should return [] for 1", function() {
+      expect(myApp.getPrimes(1)).to.eql([]);
+    });
+
+      it("should return [ 2, 3, 5, 7, 11 ] for 11", function() {
+      expect(myApp.getPrimes(11)).to.eql([ 2, 3, 5, 7, 11 ]);
+    });
+
+      it("should return [ 2 ] for 2", function() {
+      expect(myApp.getPrimes(2)).to.eql([ 2 ]);
+    });
+
+      it("should return [ 2, 3 ] for 3", function() {
+      expect(myApp.getPrimes(3)).to.eql([ 2, 3 ]);
+    });
+
+      it("should return [ 2, 3 ] for 4", function() {
+      expect(myApp.getPrimes(4)).to.eql([ 2, 3 ]);
+    });
+
+      it("should return [ 2, 3, 5] for 6", function() {
+      expect(myApp.getPrimes(6)).to.eql([ 2, 3, 5 ]);
+    });
+
+});
