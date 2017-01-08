@@ -56,4 +56,20 @@ describe("Data types tests ", function() {
 
   });
 
+  describe("Case for arrays", function() {
+
+    it("should return `2` for `[0, 1, 2]`", function() {
+      expect(dataTypes([0, 1, 2])).toBe(2);
+    });
+
+    it("should return `undefined` for `[]`", function() {
+      expect(dataTypes([])).not.toBeDefined();
+    });
+
+    it("should return `undefined` for `[4, 9]`", function() {
+      expect(dataTypes([4, 9])).not.toBeDefined();
+    });
+
+  });
+
 });
