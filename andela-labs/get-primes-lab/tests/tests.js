@@ -24,4 +24,9 @@ describe("Case for non numerical inputs", function() {
     expect(myApp.getPrimes(true)).to.equal('wrong input type');
   });
 
+  it("should return 'wrong input type' for a function callback" , function() {
+    var one = function () {};
+    expect(myApp.getPrimes(one)).to.equal('wrong input type');
+  });
+
 });
