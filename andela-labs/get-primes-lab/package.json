@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rkterungwa16/bootcamp-home-day-one/issues"
   },
-  "homepage": "https://github.com/rkterungwa16/bootcamp-home-day-one#readme"
+  "homepage": "https://github.com/rkterungwa16/bootcamp-home-day-one#readme",
+  "dependencies": {
+    "chai": "^3.5.0"
+  }
 }
