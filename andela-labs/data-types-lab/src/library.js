@@ -20,4 +20,8 @@ function dataTypes(value) {
    else if (typeof value === 'number' && value === 100) {
       return 'equal to 100';
    }
+
+   else if (value instanceof Array && value.length > 2) {
+      return value[2];
+   }
 }
