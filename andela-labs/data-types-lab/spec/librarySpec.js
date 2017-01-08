@@ -9,6 +9,10 @@ describe("Data types tests ", function() {
       expect(dataTypes(undefined)).toEqual('no value');
     });
 
+    it("should return false for `false`", function() {
+      expect(dataTypes(false)).toBe(false);
+    });
+
   });
 
   describe("Case for booleans", function() {
