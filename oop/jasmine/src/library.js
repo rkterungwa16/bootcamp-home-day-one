@@ -1,9 +1,18 @@
 var school = function(name, localGovt, state) {
+	// Private members
+   var _facilities = {
+      library: 'Library',
+      hall: 'Auditorium'
+   }
 
    var that = {};
    that.name = name;
    that.localGovt = localGovt || '';
    that.state = state || '';
+
+   that.returnFacilities = function() {
+      return _facilities;
+   }
 
    return that;
 }
