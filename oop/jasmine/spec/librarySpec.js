@@ -18,4 +18,10 @@
       expect(abuZaria.returnProgrammes().postgrad).toBe('Postgraduate');
     });
 
+    it("The school shoud have a Hall and an Auditorium ", function() {
+      var abuZaria = university('ABU', 'zaria', 'kaduna', 'Tafawa Balewa crescent');
+      expect(abuZaria.returnFacilities().hall).toBe('Auditorium');
+      expect(abuZaria.returnFacilities().library).toBe('Library');
+    });
+
 });
