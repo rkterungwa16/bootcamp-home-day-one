@@ -12,4 +12,10 @@
       expect(abuZaria.state).toBe('kaduna');
     });
 
+    it("The university should have an undergraduate or postgraduate program", function() {
+      var abuZaria = university('ABU', 'zaria', 'kaduna', 'Tafawa Balewa crescent');
+      expect(abuZaria.returnProgrammes().undergrad).toBe('Undergraduate');
+      expect(abuZaria.returnProgrammes().postgrad).toBe('Postgraduate');
+    });
+
 });
