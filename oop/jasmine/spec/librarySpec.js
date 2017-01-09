@@ -30,4 +30,9 @@
       
     });
 
+    it("The university should have a street name", function() {      
+      var abuZaria = university('ABU', 'zaria', 'kaduna', 'Tafawa Balewa crescent');
+      expect(abuZaria.nameOfStreet).toBe('Tafawa Balewa crescent');
+    });   
+
 });
