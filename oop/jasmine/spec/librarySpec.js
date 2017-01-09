@@ -24,4 +24,10 @@
       expect(abuZaria.returnFacilities().library).toBe('Library');
     });
 
+    it("The school should have a Vice Chancellor", function() {
+      var abuZaria = university('ABU', 'zaria', 'kaduna', 'Tafawa Balewa crescent');
+      expect(abuZaria.headOfInstitution).toBe('Vice Chancellor');
+      
+    });
+
 });
